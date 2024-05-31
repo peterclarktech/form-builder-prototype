@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
-import ProfileDisplay from "./ProfileDisplay";
+// import ProfileDisplay from "./ProfileDisplay";
 
 type HeaderProps = {
     children?: React.ReactNode
@@ -13,7 +13,7 @@ const HeaderBody: FC<HeaderProps> = (props: HeaderProps) => {
             <nav className="flex flex-row mx-2 sm:mx-8 py-2 gap-x-10 sm:gap-x-8">
             <div className="ml-auto order-2 self-center">
                 <span><DarkModeToggle/></span>
-                <span className="ml-10"><ProfileDisplay/></span>
+                {/* <span className="ml-10"><ProfileDisplay/></span> */}
             </div>
                 {props.children}
             </nav>

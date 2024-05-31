@@ -16,7 +16,7 @@ export default function App() {
         <HeaderWrapper />
         <Outlet />
         <Footer>
-          <span>Company Name, Inc. &copy;{year}</span>
+          <span>&copy;{year}</span>
         </Footer>
       </div>
     </AppContextWrapper>
@@ -28,7 +28,7 @@ const HeaderWrapper:FC<{}> = () => {
   const appContext = useContext(AppContext);
   return (
     <Header.HeaderBody>
-      <Header.HeaderLogo linkto="/" imgSrc={reactlogo} imgAlt="React" imgClass="">React Boilerplate Project</Header.HeaderLogo>
+      <Header.HeaderLogo linkto="/" imgSrc={reactlogo} imgAlt="React" imgClass="">Sample Form Builder</Header.HeaderLogo>
       <Header.HeaderLink to="/" iconClass="bi bi-house">Home</Header.HeaderLink>
       {appContext.user.username && <Header.HeaderLink to="/crudsample/users" iconClass="bi bi-journal-richtext">CRUD Samples</Header.HeaderLink>}
     </Header.HeaderBody>
