@@ -1,3 +1,5 @@
+import FieldBuilder from '../components/FieldBuilder';
+import FormPreview from '../components/FormPreview';
 import PageSection from '../components/PageSection';
 
 import ColorGroup from '../utils/ColorGroup';
@@ -15,8 +17,13 @@ export default function HomePage() {
             <PageSection title="Start Creating your Form" 
                 subtitle="" 
                 colorGroup={ColorGroup.inherit}
-                hasBottomBorder={false}>
-                
+                hasBottomBorder>
+                <FieldBuilder>
+                    
+                </FieldBuilder>
+            </PageSection>
+            <PageSection title="Form Preview" colorGroup={ColorGroup.inherit}>
+                <FormPreview />
             </PageSection>
             </div>
         </div>

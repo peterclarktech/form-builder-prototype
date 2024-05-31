@@ -15,7 +15,7 @@ const TextField = forwardRef<HTMLInputElement, TextFieldProps>((props, ref) => {
             </span>
             <span className="">
                 <input {...htmlprops} ref={ref} type={isPassword ? "password" : "text"}
-                    className="border border-gray-light bg-white text-black rounded-lg py-2 px-4"
+                    className="float-left border border-gray-light bg-white text-black rounded-lg py-2 px-4"
                 />
             </span>
         </div>
