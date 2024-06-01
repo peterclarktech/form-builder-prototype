@@ -10,7 +10,7 @@ const Panel: FC<PanelProps> = ({colorGroup = ColorGroup.invert, children}) => {
 
     return (
         <div className={`${colorSelector.bgColorClass} ${colorSelector.textColorClass} 
-            max-w-5xl mx-auto p-5 sm:p-10 border-0 rounded-3xl shadow-2xl`}>
+            max-w-5xl mx-auto my-10 p-5 sm:p-10 border-0 rounded-3xl shadow-2xl`}>
             <div className="content-center">
                 {children}
             </div>

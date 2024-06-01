@@ -1,7 +1,7 @@
 import { FC, useContext } from 'react';
 import { Outlet } from 'react-router-dom'
 
-import reactlogo from './assets/react.svg'
+import logo from './assets/FormBuilderLogo.jpg'
 
 import AppContext, { AppContextWrapper } from './contexts/AppContext';
 import Header from './components/Header'
@@ -28,7 +28,7 @@ const HeaderWrapper:FC<{}> = () => {
   const appContext = useContext(AppContext);
   return (
     <Header.HeaderBody>
-      <Header.HeaderLogo linkto="/" imgSrc={reactlogo} imgAlt="React" imgClass="">Sample Form Builder</Header.HeaderLogo>
+      <Header.HeaderLogo linkto="/" imgSrc={logo} imgAlt="React" imgClass="max-w-14">Sample Form Builder</Header.HeaderLogo>
       <Header.HeaderLink to="/" iconClass="bi bi-house">Home</Header.HeaderLink>
       {appContext.user.username && <Header.HeaderLink to="/crudsample/users" iconClass="bi bi-journal-richtext">CRUD Samples</Header.HeaderLink>}
     </Header.HeaderBody>

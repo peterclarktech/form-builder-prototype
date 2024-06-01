@@ -18,7 +18,7 @@ const Button: FC<ButtonProps> = (props) => {
 
     return (
         <button disabled={variant === ButtonType.disabled} 
-            className={`${colorClass.bgColorClass} ${colorClass.textColorClass} border border-gray-light dark:border-gray rounded-lg py-2 px-4 ${hoverClasses}`} 
+            className={`${colorClass.bgColorClass} ${colorClass.textColorClass} border border-gray-light dark:border-gray rounded-lg font-semibold py-2 px-4 ${hoverClasses}`} 
             {...htmlprops}>
                 {children}
         </button>

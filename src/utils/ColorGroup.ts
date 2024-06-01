@@ -39,17 +39,17 @@ ColorSelect[ColorGroup.dark] = {
     textColorClass:"text-white"};
 ColorSelect[ColorGroup.positive] = {
     bgColorClass:"bg-positive-light dark:bg-positive-dark",
-    titleColorClass:"text-black dark:text-white",
-    textColorClass:"text-black dark:text-white"};
+    titleColorClass:"text-white",
+    textColorClass:"text-white"};
 ColorSelect[ColorGroup.danger] = {
     bgColorClass:"bg-danger-light dark:bg-danger-dark",
-    titleColorClass:"text-black dark:text-white",
-    textColorClass:"text-black dark:text-white"};
+    titleColorClass:"text-white",
+    textColorClass:"text-white"};
 ColorSelect[ColorGroup.accent] = {
     bgColorClass:"bg-accent-light dark:bg-accent-dark",
     titleColorClass:"text-white",
     textColorClass:"text-white"};
 ColorSelect[ColorGroup.neutral] = {
-    bgColorClass:"bg-gray-light dark:bg-gray",
-    titleColorClass:"text-black dark:text-white",
-    textColorClass:"text-black dark:text-white"};
+    bgColorClass:"bg-gray",
+    titleColorClass:"text-white",
+    textColorClass:"text-white"};

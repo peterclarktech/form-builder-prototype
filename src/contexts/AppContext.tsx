@@ -14,7 +14,7 @@ export type AppContextObj = {
     setUser: (user: User) => void
 }
 const initAppContext: AppContextObj = {
-    darkmode: DarkMode.auto,
+    darkmode: DarkMode.off,
     setDarkmode: () => {},
     user: { username: "", firstname: "" },
     setUser: () => {}
@@ -26,14 +26,13 @@ export default AppContext;
 
 
 export const AppContextWrapper: FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [currentDarkMode, setCurrentDarkMode] = useState<DarkMode>(DarkMode.auto);
+    const [currentDarkMode, setCurrentDarkMode] = useState<DarkMode>(DarkMode.off);
     const [user, setUser] = useState<User>({username: "", firstname: ""});
     const userPrefDarkmode = useUserDarkMode();
 
     let currentContext:AppContextObj = {
-        ...initAppContext,
-        user: user,
         darkmode: currentDarkMode,
+        user: user,
         setDarkmode: (mode) => setCurrentDarkMode(mode),
         setUser: (user: User) => {
             setUser(user);
